@@ -1,0 +1,50 @@
+:root {
+
+  /* Primitives */
+  --size-2xl: 5rem; /* 80px */
+  --size-xl: 4rem; /* 64px */
+  --size-l: 3rem; /* 48px */
+  --size-m: 2rem; /* 32px */
+  --size-s: 1.5rem; /* 24px */
+  --size-xs: 1rem; /* 16px */
+  --size-2xs: 0.5rem; /* 8px */
+  --size-3xs: 0.25rem; /* 4px */
+
+  /* Semantics */
+  --space-2xl: var(--size-xl);
+  --space-xl: var(--size-l);
+  --space-l: var(--size-m);
+  --space-m: var(--size-m);
+  --space-s: var(--size-s);
+  --space-xs: var(--size-xs);
+  --space-2xs: var(--size-2xs);
+  
+  --border-radius-s: var(--size-3xs); /* 4px */
+
+  --hero-v-padding: var(--space-xl);
+  --foter-v-padding: var(--space-xl);
+  
+  --border-radius-button: var(--border-radius-s);
+  
+}
+
+/* Desde tamaño tablet a más */
+@media (min-width: 810px) {
+
+  :root {
+
+    --space-2xl: var(--size-2xl);
+    --space-xl: var(--size-xl);
+    --space-l: var(--size-l);
+
+    --hero-v-padding: var(--space-2xl);
+    --footer-v-padding: var(--space-2xl);
+    
+  }
+  
+}
+
+/* Solo tamaño desktop */
+@media (min-width: 1200px) {
+  
+}

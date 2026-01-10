@@ -1,0 +1,90 @@
+:root {
+  
+  /* Primitivos */
+  --mora-20: #20023A;
+  --mora-40: #592A88;
+  --mora-60: #8B48CF;
+  --mora-80: #CFA9FF;
+  --mora-95: #F2EBFD;
+  --mora-98: #FAF7FF;
+  
+  --gris-20: #001634;
+  --gris-40: #374A5D;
+  --gris-60: #657383;
+  --gris-80: #B7BFC7;
+  --gris-95: #ECEFF2;
+  --gris-98: #F8F8F9;
+  --gris-100: #FFFFFF;
+
+  --menta: #38F28F;
+  --pitaya: #FF135C;
+  --amarillo: #FFF54B;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  
+    /* Primitivos */
+    --mora-20: #F2EBFD;
+    --mora-40: #DDBBFF;
+    --mora-60: #BC84FF;
+    --mora-80: #68369C;
+    --mora-95: #3D0D65;
+    --mora-98: #29004E;
+    
+    --gris-20: #F6F9FC;
+    --gris-40: #B4BFCA;
+    --gris-60: #8291A1;
+    --gris-80: #374A5D;
+    --gris-95: #0A2036;
+    --gris-98: #001730;
+    --gris-100: #000A27;
+  
+    --menta: #38F28F;
+    --pitaya: #FF135C;
+    --amarillo: #FFF64D;
+  
+  }
+  
+}
+
+:root {
+
+  /* Tokens semánticos */
+  --bg-surface-default: var(--gris-100);
+  --bg-surface-card: var(--gris-98);
+  --bg-surface-highlight-soft: var(--mora-98);
+  --bg-surface-highlight-hard: var(--mora-95);
+  
+  --bg-button-primary-default: var(--mora-80);
+  --bg-button-primary--hover: var(--mora-80);
+  --bg-button-primary--pressed: var(--mora-60);
+
+  --text-primary: var(--gris-20);
+  --text-secondary: var(--gris-40);
+  --text-highlight: var(--mora-40);
+  
+  --text-link-default: var(--mora-60);
+  --text-link-hover: var(--mora-40);
+  --text-link-pressed: var(--mora-40);
+  
+  --text-icon: var(--mora-40);
+  
+  --text-button-primary-default: var(--mora-20);
+  --text-button-primary-hover: var(--mora-20);
+  --text-button-primary-pressed: var(--mora-20);
+  
+  --text-button-secondary-default: var(--mora-60);
+  --text-button-secondary-hover: var(--mora-40); 
+  --text-button-secondary-pressed: var(--mora-40);
+
+  --border-button-secondary-default: var(--mora-60); 
+  --border-button-secondary-hover: var(--mora-40);
+  --border-button-secondary-pressed: var(--mora-40);
+
+  --border-divider: var(--gris-80);
+  --border-tab: var(--gris-20);
+  --border-image: var(--gris-95);
+
+}
