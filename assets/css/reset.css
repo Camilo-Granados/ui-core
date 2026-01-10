@@ -57,8 +57,3 @@ svg {
 	outline: 2px solid currentColor;
 	outline-offset: 3px;
 }
-
-strong,
-b {
-	font-weight: var(--font-weight-semibold);
-}
