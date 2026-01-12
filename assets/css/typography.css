@@ -9,8 +9,9 @@ html {
   --font-family-body: Readex Pro, sans-serif;
 
   /* Font weight */
-  --font-weight-regular: 360;
-  --font-weight-semibold: 520;
+  --font-weight-regular: 380;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 700;
 
   /* Text size */
   --font-size-2xl: 2.25rem; /* 36px*/

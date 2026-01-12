@@ -243,6 +243,11 @@
 
 
 /* ---Iconos--- */
+.icon-xs {
+	width: var(--space-xs);
+	height: var(--space-xs);
+}
+
 .icon-s {
 	width: var(--space-s);
 	height: var(--space-s);
