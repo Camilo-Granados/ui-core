@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.2
+- Add: clase grid-align-start para evitar que los elementos sean full height
+
 ## v0.2.1
 - Add: nuevo tamaño de icono icon-xs (16px)
 - Change: peso de tipografías para mejor renderizado en celular

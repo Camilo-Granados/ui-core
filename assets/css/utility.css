@@ -87,6 +87,10 @@
 	grid-column: span 12;
 }
 
+.grid-align-start {
+	align-items: start;
+}
+
 @media (min-width: 810px) {
 
     .flex-row {
