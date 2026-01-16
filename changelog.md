@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.2.3
+- Add: clase col-1, col-2 y col-3
+- Add: --font-weight-light (300)
+- Add: --font-weight-medium (520)
+- Change: --font-weight-semibold (560)
+- Change: --font-weight-bold (650)
+- Add: --border-highlight (mora-40)
+
 ## v0.2.2
 - Add: clase grid-align-start para evitar que los elementos sean full height
 
