@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.3.0
+- Add: `layouts/partials/illustrations`
+
 ## v0.2.4
 - Remove (non breaking): Quitar de reset.css html "scrollbar-gutter: stable;"
 
