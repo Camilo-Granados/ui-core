@@ -25,6 +25,9 @@
   --foter-v-padding: var(--space-xl);
   
   --border-radius-button: var(--border-radius-s);
+
+  --stroke-s: 2px;
+  --stroke-m: 4px;
   
 }
 

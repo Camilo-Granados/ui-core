@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.3.2
+- Add: En sizes.css, agregar variables stroke-s: 2px y stroke-m: 4px
+
+
 ## v0.3.1
 - Add: clase ilus-xl para tamaño de ilustraciones.
 
