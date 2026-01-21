@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.3.1
+- Add: clase ilus-xl para tamaño de ilustraciones.
+
 ## v0.3.0
 - Add: `layouts/partials/illustrations`
 

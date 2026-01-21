@@ -287,13 +287,31 @@
 }
 
 .icon-l {
-	width: 2.5rem;
-	height: 2.5rem;
+	width: 2rem;
+	height: 2rem;
 }
 
-@media (max-width: 809px) {
+@media (min-width: 810px) {
+
 	.icon-l {
-		width: 2rem;
-		height: 2rem;
+		width: 2.5rem;
+		height: 2.5rem;
 	}
+
+}
+
+
+/* ---Ilustraciones--- */
+.ilus-xl {
+	max-width: 200px;
+	max-height: 200px;
+}
+
+@media (min-width: 810px) {
+
+	.ilus-xl {
+		max-width: 400px;
+		max-height: 400px;
+	}
+
 }
