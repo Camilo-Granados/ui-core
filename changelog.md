@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.2.4
+- Remove (non breaking): Quitar de reset.css html "scrollbar-gutter: stable;"
+
 ## v0.2.3
 - Add: clase col-1, col-2 y col-3
 - Add: --font-weight-light (300)
