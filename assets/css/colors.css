@@ -47,21 +47,6 @@
     --amarillo: #FFF64D;
   
   }
-
-  .ilus {
-    --mora-20: var(--mora-95);
-    --mora-40: var(--mora-80);
-    --mora-60: var(--mora-60);
-    --mora-80: var(--mora-40);
-    --mora-95: var(--mora-20);
-    
-    --gris-20: var(--gris-95);
-    --gris-40: var(--gris-80);
-    --gris-60: #8291A1;
-    --gris-80: var(--gris-60);
-    --gris-95: var(--gris-40);
-    --gris-100: var(--gris-20);
-  }
   
 }
 
@@ -103,5 +88,50 @@
   --border-tab: var(--gris-20);
   --border-image: var(--gris-95);
   --border-highlight: var(--mora-40);
+
+}
+
+/* ---Ilustraciones--- */
+:root {
+  --ink-mora-20: var(--mora-20);
+  --ink-mora-40: var(--mora-40);
+  --ink-mora-60: var(--mora-60);
+  --ink-mora-80: var(--mora-80);
+  --ink-mora-95: var(--mora-95);
+  --ink-mora-98: var(--mora-98);
+  
+  --ink-gris-20: var(--gris-20);
+  --ink-gris-40: var(--gris-40);
+  --ink-gris-60: var(--gris-60);
+  --ink-gris-80: var(--gris-80);
+  --ink-gris-95: var(--gris-95);
+  --ink-gris-98: var(--gris-98);
+  --ink-gris-100: var(--gris-100);
+
+  --ink-menta: var(--menta);
+  --ink-pitaya: var(--pitaya);
+  --ink-amarillo: var(--amarillo);
+}
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --ink-mora-20: var(--mora-95);
+    --ink-mora-40: var(--mora-80);
+    --ink-mora-60: var(--mora-60);
+    --ink-mora-80: var(--mora-40);
+    --ink-mora-95: var(--mora-20);
+    
+    --ink-gris-20: var(--gris-95);
+    --ink-gris-40: var(--gris-80);
+    --ink-gris-60: #8291A1;
+    --ink-gris-80: var(--gris-60);
+    --ink-gris-95: var(--gris-40);
+    --ink-gris-100: var(--gris-20);
+
+    --ink-menta: var(--menta);
+    --ink-pitaya: var(--pitaya);
+    --ink-amarillo: var(--amarillo);
+  }
 
 }

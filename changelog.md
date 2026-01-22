@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.3.4
+- Add: nuevas variables 'ink' solo para ilustraciones
+
 ## v0.3.3
 - Add: colores dark theme especiales para class .ilus
 - Add: 2 ilustraciones
