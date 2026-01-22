@@ -93,6 +93,8 @@
 
 /* ---Ilustraciones--- */
 :root {
+
+  /* Primitivos */
   --ink-mora-20: var(--mora-20);
   --ink-mora-40: var(--mora-40);
   --ink-mora-60: var(--mora-60);
@@ -111,11 +113,17 @@
   --ink-menta: var(--menta);
   --ink-pitaya: var(--pitaya);
   --ink-amarillo: var(--amarillo);
+
+  /* Tokens semánticos */
+  --ink-line-drawing: var(--gris-20);
+
 }
 
 @media (prefers-color-scheme: dark) {
 
   :root {
+
+    /* Primitivos */
     --ink-mora-20: var(--mora-95);
     --ink-mora-40: var(--mora-80);
     --ink-mora-60: var(--mora-60);
@@ -124,7 +132,7 @@
     
     --ink-gris-20: var(--gris-95);
     --ink-gris-40: var(--gris-80);
-    --ink-gris-60: #8291A1;
+    --ink-gris-60: var(--gris-60);
     --ink-gris-80: var(--gris-60);
     --ink-gris-95: var(--gris-40);
     --ink-gris-100: var(--gris-20);
@@ -132,6 +140,10 @@
     --ink-menta: var(--menta);
     --ink-pitaya: var(--pitaya);
     --ink-amarillo: var(--amarillo);
+
+    /* Tokens semánticos */
+    --ink-line-drawing: var(--gris-60);
+
   }
 
 }
