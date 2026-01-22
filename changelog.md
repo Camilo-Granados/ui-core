@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.3.3
+- Add: colores dark theme especiales para class .ilus
+- Add: 2 ilustraciones
+
 ## v0.3.2
 - Add: En sizes.css, agregar variables stroke-s: 2px y stroke-m: 4px
 

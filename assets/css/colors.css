@@ -23,6 +23,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   :root {
   
     /* Primitivos */
@@ -45,6 +46,21 @@
     --pitaya: #FF135C;
     --amarillo: #FFF64D;
   
+  }
+
+  .ilus {
+    --mora-20: var(--mora-95);
+    --mora-40: var(--mora-80);
+    --mora-60: var(--mora-60);
+    --mora-80: var(--mora-40);
+    --mora-95: var(--mora-20);
+    
+    --gris-20: var(--gris-95);
+    --gris-40: var(--gris-80);
+    --gris-60: #8291A1;
+    --gris-80: var(--gris-60);
+    --gris-95: var(--gris-40);
+    --gris-100: var(--gris-20);
   }
   
 }
