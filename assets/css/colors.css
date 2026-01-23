@@ -116,6 +116,7 @@
 
   /* Tokens semánticos */
   --ink-line-drawing: var(--gris-20);
+  --ink-cloth-4: var(--gris-20);
 
 }
 
@@ -143,7 +144,7 @@
 
     /* Tokens semánticos */
     --ink-line-drawing: var(--gris-60);
-
+    --ink-cloth-4: var(--gris-80);
   }
 
 }

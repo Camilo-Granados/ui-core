@@ -27,7 +27,8 @@
   --border-radius-button: var(--border-radius-s);
 
   --stroke-s: 2px;
-  --stroke-m: 4px;
+  --stroke-m: 3px;
+  --stroke-l: 4px;
   
 }
 

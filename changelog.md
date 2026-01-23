@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.3.6
+- Add: clase ilus-l para tamaño de ilustraciones
+- Change: clase ilus-m de 4px a 3px
+- Add: ilustración teamwork
+
 ## v0.3.5
 - Add: clase ilus-l para tamaño de ilustraciones
 - Fix: variables de color en ilustraciones existentes
