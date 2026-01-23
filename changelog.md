@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.3.7
+- Add: reset de button, input, select, textarea
+
 ## v0.3.6
 - Add: clase ilus-l para tamaño de ilustraciones
 - Change: clase ilus-m de 4px a 3px
