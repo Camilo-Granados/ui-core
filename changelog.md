@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.4.0
+- Add: animations.css
+
 ## v0.3.7
 - Add: reset de button, input, select, textarea
 
