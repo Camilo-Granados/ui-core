@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.4.1
+- Add: clases para fondo de cards.
+
 ## v0.4.0
 - Add: animations.css
 

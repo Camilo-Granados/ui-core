@@ -325,3 +325,14 @@
 	}
 
 }
+
+/* ---Cards--- */
+.card-bg {
+	background-color: var(--bg-surface-card);
+	padding: var(--space-s) var(--space-xs);
+	border-radius: var(--border-radius-s);
+}
+
+.card-no-bg {
+	margin: var(--space-s) 0;
+}
