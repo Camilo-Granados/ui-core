@@ -1,6 +1,6 @@
+  /* --- Primitivos --- */
 :root {
   
-  /* Primitivos */
   --mora-20: #20023A;
   --mora-40: #592A88;
   --mora-60: #8B48CF;
@@ -22,11 +22,11 @@
 
 }
 
+
 @media (prefers-color-scheme: dark) {
 
   :root {
   
-    /* Primitivos */
     --mora-20: #F2EBFD;
     --mora-40: #DDBBFF;
     --mora-60: #BC84FF;
@@ -50,9 +50,13 @@
   
 }
 
-:root {
+/* --- Tokens semánticos --- */
 
-  /* Tokens semánticos */
+/* Tema default */
+
+:root,
+[data-theme="default"] {
+
   --bg-surface-default: var(--gris-100);
   --bg-surface-card: var(--gris-98);
   --bg-surface-highlight-soft: var(--mora-98);
@@ -91,8 +95,17 @@
 
 }
 
-/* ---Ilustraciones--- */
-:root {
+/* Tema alt */
+[data-theme="alt"] {
+
+  --bg-surface-default: var(--gris-98);
+  --bg-surface-card: var(--gris-100);
+}
+
+
+/* --- Ilustraciones --- */
+:root,
+[data-theme="default"] {
 
   /* Primitivos */
   --ink-mora-20: var(--mora-20);
@@ -122,7 +135,8 @@
 
 @media (prefers-color-scheme: dark) {
 
-  :root {
+  :root,
+  [data-theme="default"] {
 
     /* Primitivos */
     --ink-mora-20: var(--mora-95);

@@ -1,7 +1,10 @@
 # Changelog
 
+## v0.5.0
+- Add: crear themes de color default y alternativo [data-theme=""]
+
 ## v0.4.1
-- Add: clases para fondo de cards.
+- Add: clases para fondo de cards
 
 ## v0.4.0
 - Add: animations.css
@@ -27,7 +30,6 @@
 
 ## v0.3.2
 - Add: En sizes.css, agregar variables stroke-s: 2px y stroke-m: 4px
-
 
 ## v0.3.1
 - Add: clase ilus-xl para tamaño de ilustraciones
