@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.4.2
+- Add: `layouts/partials/icons/calendar.html`
+
 ## v0.4.0
 - Add: animations.css
 
