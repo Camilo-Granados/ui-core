@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.4.3
+## v0.5.1
 - Add: `layouts/partials/icons/calendar.html`
 
 ## v0.4.0
