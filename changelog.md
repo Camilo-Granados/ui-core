@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.5.2
+- Add: clases card-bg y card-no-bg
+
 ## v0.5.1
 - Add: `layouts/partials/icons/calendar.html`
 
