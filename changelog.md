@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.5.4
+- Add: `layouts/partials/icons/language.html`.
+- Add: utilidad `.skip-link` en `assets/css/utility.css` para revelar enlaces de salto al recibir foco visible.
+- Add: utilidad `.visually-hidden` en `assets/css/utility.css` para conservar contenido accesible y revelar controles internos al recibir foco.
+- Change: `--duration-fast`, `--duration-base` y `--duration-slow` reducen su duración bajo `prefers-reduced-motion: reduce`.
+
+## v0.5.3
+- Fix: publicación completa del módulo; reemplaza la publicación incompleta de v0.5.2.
+
 ## v0.5.2
 - Add: clases card-bg y card-no-bg
 

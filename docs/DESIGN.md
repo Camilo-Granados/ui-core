@@ -42,6 +42,10 @@ Este documento reúne las reglas que guían el sistema visual del módulo `ui-co
 - El HTML debe usar elementos semánticos, nombres accesibles adecuados y una jerarquía de encabezados coherente.
 - Las animaciones deben respetar la preferencia de movimiento reducido del sistema.
 
+Consulta [Reducción de movimiento](reduced-motion.md) para usar los tokens de
+duración de `assets/css/animations.css` y para implementar controles de pausa
+en animaciones continuas.
+
 ## Iconografía
 
 - Solo se usarán iconos SVG creados como parciales de Hugo dentro de `layouts/partials/icons/`.
@@ -53,6 +57,8 @@ Este documento reúne las reglas que guían el sistema visual del módulo `ui-co
 Las utilidades residen en `assets/css/utility.css` y componen patrones genéricos sobre los tokens del sistema.
 
 - **Visibilidad:** `.desktop-only` y `.mobile-only` alternan contenido desde el breakpoint de 810 px.
+- **Accesibilidad:** `.skip-link` oculta visualmente un enlace de salto hasta que recibe foco visible. Consulta [Enlaces de salto](skip-links.md) para el marcado de adopción.
+- **Contenido asistivo:** `.visually-hidden` conserva contenido para tecnologías asistivas y revela controles internos al recibir foco. Consulta [Contenido solo para tecnologías asistivas](visually-hidden.md) para sus límites de uso.
 - **Layout flex:** `.flex-row` dispone el contenido en columna en móvil y en fila desde 810 px; `.flex-col` crea una columna alineada al inicio; `.space-between` reparte los elementos en el eje principal.
 - **Layout grid:** `.grid-2-cards`, `.grid-3-cards` y `.grid-12` definen composiciones de tarjetas y una retícula de doce columnas. `.col-1` a `.col-9` y `.col-12` determinan el número de columnas ocupadas, mientras `.grid-align-start` alinea los ítems al inicio.
 - **Separación:** `.gap-2xs`, `.gap-xs`, `.gap-s`, `.gap-m`, `.gap-l` y `.gap-xl` aplican separación basada en tokens; `.gap-xl` aumenta en pantallas desde 810 px.

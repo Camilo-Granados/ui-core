@@ -19,9 +19,12 @@ sitio conserva su estructura, textos, rutas y decisiones de marca.
   JavaScript debe mejorar la interacción, no ocultar navegación esencial.
 - No duplicar el estilo global existente de `:focus-visible`.
 
-## 1. Utilidad para enlaces de salto
+## 1. Utilidad para enlaces de salto — Completado
 
 **Prioridad: alta**
+
+**Entregado:** `.skip-link` en `assets/css/utility.css` y guía de adopción en
+[`docs/skip-links.md`](../skip-links.md).
 
 Añadir una clase de utilidad `.skip-link` para aplicar a enlaces que llevan al
 contenido principal u otro destino de salto.
@@ -125,6 +128,118 @@ El controlador debe aceptar referencias a:
    documentada y pruebas, o posponerlo con su justificación.
 4. Notas de versión que indiquen los requisitos de adopción para consumidores.
 
+## Referencia provisional de un consumidor
+
+Los siguientes fragmentos muestran una implementación local que cumple el
+contrato propuesto. Son material de referencia para orientar la solución del
+módulo; no definen nombres de clases, textos, puntos de quiebre ni una API
+obligatoria para `ui-core`.
+
+### Enlace de salto y destino
+
+El consumidor coloca el enlace al inicio de `body` y hace enfocable el destino
+sin añadirlo al orden de tabulación normal:
+
+```html
+<body>
+  <a class="skip-link" href="#content">Saltar al contenido principal</a>
+  <!-- Cabecera y navegación -->
+  <main id="content" tabindex="-1">
+    <!-- Contenido principal -->
+  </main>
+</body>
+```
+
+La regla visual candidata a convertirse en utilidad del módulo es:
+
+```css
+.skip-link {
+  position: fixed;
+  top: var(--space-xs);
+  left: var(--space-xs);
+  z-index: 1300;
+  padding: var(--space-2xs) var(--space-xs);
+  background-color: var(--bg-surface-default);
+  color: var(--text-primary);
+  transform: translateY(-200%);
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+```
+
+El módulo debe sustituir el valor de `z-index` por un mecanismo compatible con
+su propia escala de capas, si existe, y mantener el foco visible global que ya
+proporciona.
+
+### Marcado mínimo del menú
+
+Este ejemplo ilustra las relaciones ARIA necesarias; los textos deben
+localizarse en cada consumidor:
+
+```html
+<button
+  class="menu-toggle"
+  aria-label="Abrir menú"
+  aria-controls="main-menu-list"
+  aria-expanded="false">
+  <!-- Icono decorativo proporcionado por el sistema de iconos -->
+</button>
+
+<div id="main-menu-list" class="menu-list">
+  <a href="/proyectos">Proyectos</a>
+  <a href="/proceso">Proceso</a>
+</div>
+```
+
+### Máquina de estado local del menú
+
+La función siguiente concentra las actualizaciones que deben ocurrir juntas:
+
+```js
+const setMenuState = (open, { returnFocus = false } = {}) => {
+  menuOpen = open;
+
+  menu.classList.toggle("is-open", menuOpen);
+  toggle.classList.toggle("is-open", menuOpen);
+  toggle.setAttribute("aria-expanded", String(menuOpen));
+  toggle.setAttribute("aria-label", menuOpen ? "Cerrar menú" : "Abrir menú");
+  menu.inert = mobileBreakpoint.matches && !menuOpen;
+  document.body.classList.toggle("no-scroll", mobileBreakpoint.matches && menuOpen);
+
+  if (menuOpen) {
+    firstMenuLink?.focus();
+  } else if (returnFocus) {
+    toggle.focus();
+  }
+};
+```
+
+El consumidor vincula la apertura y Escape a esa transición:
+
+```js
+toggle.addEventListener("click", () => setMenuState(!menuOpen));
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && menuOpen && mobileBreakpoint.matches) {
+    setMenuState(false, { returnFocus: true });
+  }
+});
+
+mobileBreakpoint.addEventListener("change", () => {
+  if (!mobileBreakpoint.matches) {
+    setMenuState(false);
+  } else {
+    setMenuState(menuOpen);
+  }
+});
+```
+
+En una implementación de módulo, el bloqueo de desplazamiento y las clases
+visuales deben ser opciones del consumidor. El estado accesible (`inert`,
+atributos ARIA y foco) no debe depender de esos detalles de presentación.
+
 ## 7. Patrón opcional para enlaces externos
 
 **Prioridad: baja**
@@ -156,7 +271,7 @@ decorativo `external-link`; no se requiere crear iconografía nueva.
 - La documentación muestra cómo aportar el aviso desde el sistema de
   localización de cada consumidor.
 
-### Referencia provisional aplicada en este sitio
+### Referencia provisional aplicada en portafolio.camilo-granados.com
 
 El pie global mantiene visible únicamente el nombre del destino. El aviso de
 nueva pestaña se conserva dentro del nombre accesible mediante una utilidad
@@ -229,7 +344,7 @@ un ejemplo de controles seguros.
 - La documentación separa claramente el contrato de la plantilla de las
   decisiones editoriales y de localización de cada consumidor.
 
-### Referencia provisional implementada en este sitio
+### Referencia provisional implementada en portafolio.camilo-granados.com
 
 El sitio usa Hugo, pero el marcado siguiente expresa el contrato que el módulo
 puede documentar o adaptar a su propio sistema de componentes. No debe copiar
@@ -283,9 +398,13 @@ WEBVTT
 [Música instrumental]
 ```
 
-## 5. Estrategia global para reducción de movimiento
+## 5. Estrategia global para reducción de movimiento — Completado
 
 **Prioridad: media**
+
+**Entregado:** `assets/css/animations.css` reduce las duraciones del módulo
+según `prefers-reduced-motion`; la guía de adopción está en
+[`docs/reduced-motion.md`](../reduced-motion.md).
 
 Incorporar una regla global, optativa y documentada para responder a
 `prefers-reduced-motion: reduce`. Debe acortar o desactivar las animaciones y
@@ -314,7 +433,7 @@ animaciones específicas de cada sitio consumidor.
 - La documentación diferencia la política reutilizable de reducción de
   movimiento de los controles de pausa propios de cada componente.
 
-### Referencia provisional aplicada en este sitio
+### Referencia provisional aplicada en portafolio.camilo-granados.com
 
 La siguiente regla se aplicó localmente en `assets/css/animations.css`. Es una
 referencia para evaluar y adaptar a los tokens, arquitectura y alcance de
@@ -369,9 +488,12 @@ const setPaused = paused => {
 }
 ```
 
-## 4. Utilidad para contenido visible solo a tecnologías asistivas
+## 4. Utilidad para contenido visible solo a tecnologías asistivas — Completado
 
 **Prioridad: media**
+
+**Entregado:** `.visually-hidden` en `assets/css/utility.css` y guía de uso en
+[`docs/visually-hidden.md`](../visually-hidden.md).
 
 Añadir una utilidad semánticamente neutra, por ejemplo `.visually-hidden`,
 para conservar contenido en el árbol de accesibilidad sin mostrarlo en la
@@ -397,7 +519,7 @@ con `aria-hidden="true"`.
 - Se incluye un ejemplo de una lista semántica equivalente a una galería visual
   duplicada.
 
-### Referencia provisional aplicada en este sitio
+### Referencia provisional aplicada en portafolio.camilo-granados.com
 
 Mientras `ui-core` no ofrezca la utilidad, el sitio incorpora esta regla local
 en `assets/css/main.css`. El módulo puede adoptarla como base, revisando la
