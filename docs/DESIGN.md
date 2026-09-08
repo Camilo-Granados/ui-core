@@ -30,8 +30,8 @@ Este documento reúne las reglas que guían el sistema visual del módulo `ui-co
 | Token | Mobile (< 810 px) | Tablet (810–1199 px) | Desktop (≥ 1200 px) |
 | --- | ---: | ---: | ---: |
 | `--font-size-s` | 15 px | 15 px | 15 px |
-| `--font-size-m` | 16 px | 16 px | 16 px |
-| `--font-size-l` | 18 px | 18 px | 18 px |
+| `--font-size-m` | 16 px | 16 px | 17 px |
+| `--font-size-l` | 18 px | 18 px | 19 px |
 | `--font-size-xl` | 24 px | 28 px | 32 px |
 | `--font-size-2xl` | 36 px | 48 px | 52 px |
 
@@ -41,7 +41,7 @@ Este documento reúne las reglas que guían el sistema visual del módulo `ui-co
 | `--line-height-m` | 1.5 | 1.5 | 1.5 |
 | `--line-height-l` | 1.5 | 1.5 | 1.5 |
 | `--line-height-xl` | 1.2 | 1.2 | 1.2 |
-| `--line-height-2xl` | 1.2 | 1.2 | 1.2 |
+| `--line-height-2xl` | 1.1 | 1.1 | 1.1 |
 
 ## Tamaños y espaciado
 

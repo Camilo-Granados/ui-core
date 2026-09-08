@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.5.6
+- Change: `.icon-l` de `2.5rem` a `2.25rem` para reducir el tamaño de los iconos grandes.
+- Change: `--line-height-2xl` de `1.2` a `1.1` para compactar la tipografía de mayor tamaño.
+- Change: `--font-size-m` y `--font-size-l` aumentan a `17px` y `19px`, respectivamente, desde 1200 px.
+
 ## v0.5.5
 - Change: tokens `--font-size-s` a `--font-size-2xl` y `--line-height-s` a `--line-height-2xl` en `assets/css/typography.css` para aplicar la escala tipográfica responsiva y alturas relativas.
 - Add: tablas de tamaños y alturas de línea responsivos de `--font-size-s` a `--font-size-2xl` en `docs/DESIGN.md`.
