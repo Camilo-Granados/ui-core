@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.5.5
+- Change: tokens `--font-size-s` a `--font-size-2xl` y `--line-height-s` a `--line-height-2xl` en `assets/css/typography.css` para aplicar la escala tipográfica responsiva y alturas relativas.
+- Add: tablas de tamaños y alturas de línea responsivos de `--font-size-s` a `--font-size-2xl` en `docs/DESIGN.md`.
+
 ## v0.5.4
 - Add: `layouts/partials/icons/language.html`.
 - Add: utilidad `.skip-link` en `assets/css/utility.css` para revelar enlaces de salto al recibir foco visible.

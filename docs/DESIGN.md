@@ -27,6 +27,22 @@ Este documento reúne las reglas que guían el sistema visual del módulo `ui-co
 - `--font-weight-light`, `--font-weight-regular`, `--font-weight-medium`, `--font-weight-semibold` y `--font-weight-bold` establecen la escala de pesos.
 - `--font-size-s` a `--font-size-2xl` y sus equivalentes `--line-height-s` a `--line-height-2xl` forman la escala tipográfica. Sus valores aumentan de forma responsiva desde 810 px y, para los tamaños, desde 1200 px.
 
+| Token | Mobile (< 810 px) | Tablet (810–1199 px) | Desktop (≥ 1200 px) |
+| --- | ---: | ---: | ---: |
+| `--font-size-s` | 15 px | 15 px | 15 px |
+| `--font-size-m` | 16 px | 16 px | 16 px |
+| `--font-size-l` | 18 px | 18 px | 18 px |
+| `--font-size-xl` | 24 px | 28 px | 32 px |
+| `--font-size-2xl` | 36 px | 48 px | 52 px |
+
+| Token | Mobile (< 810 px) | Tablet (810–1199 px) | Desktop (≥ 1200 px) |
+| --- | ---: | ---: | ---: |
+| `--line-height-s` | 1.5 | 1.5 | 1.5 |
+| `--line-height-m` | 1.5 | 1.5 | 1.5 |
+| `--line-height-l` | 1.5 | 1.5 | 1.5 |
+| `--line-height-xl` | 1.2 | 1.2 | 1.2 |
+| `--line-height-2xl` | 1.2 | 1.2 | 1.2 |
+
 ## Tamaños y espaciado
 
 - `--size-3xs` a `--size-2xl` es la escala primitiva de medidas, de 4 px a 80 px.

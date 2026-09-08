@@ -17,16 +17,16 @@ html {
 
   /* Text size */
   --font-size-2xl: 2.25rem; /* 36px*/
-  --font-size-xl: 1.625rem; /* 26px*/
-  --font-size-l: 1.1875rem; /* 19px*/
-  --font-size-m: 1.0625rem; /* 17px*/
-  --font-size-s: 0.875rem; /* 14px*/
+  --font-size-xl: 1.5rem; /* 24px*/
+  --font-size-l: 1.125rem; /* 18px*/
+  --font-size-m: 1rem; /* 16px*/
+  --font-size-s: 0.9375rem; /* 15px*/
 
-  --line-height-2xl: 2.5rem; /* 40px*/
-  --line-height-xl: 2rem; /* 32px*/
-  --line-height-l: 2rem; /* 24px*/
-  --line-height-m: 1.5rem; /* 24px*/
-  --line-height-s: 1.5rem; /* 24px*/
+  --line-height-2xl: 1.2;
+  --line-height-xl: 1.2;
+  --line-height-l: 1.5;
+  --line-height-m: 1.5;
+  --line-height-s: 1.5;
 
 }
 
@@ -36,17 +36,8 @@ html {
   :root {
 
      /* text size */
-    --font-size-2xl: 3.25rem; /* 52px*/
-    --font-size-xl: 1.875rem; /* 30px*/
-    --font-size-l: 1.25rem; /* 20px*/
-    --font-size-m: 1.125rem; /* 18px*/
-    --font-size-s: 0.9375rem; /* 15px*/
-
-    --line-height-2xl: 4rem; /* 64px*/
-    --line-height-xl: 2.5rem; /* 40px*/
-    --line-height-l: 2rem; /* 32px*/
-    --line-height-m: 1.5rem; /* 24px*/
-    --line-height-s: 1.5rem; /* 24px*/
+    --font-size-2xl: 3rem; /* 48px*/
+    --font-size-xl: 1.75rem; /* 28px*/
     
   }
   
@@ -57,11 +48,8 @@ html {
   :root {
     
     /* Text size */
-    --font-size-2xl: 3.625rem; /* 56px*/
+    --font-size-2xl: 3.25rem; /* 52px*/
     --font-size-xl: 2rem; /* 32px*/
-    --font-size-l: 1.3125rem; /* 21px*/
-    --font-size-m: 1.125rem; /* 18px*/
-    --font-size-s: 0.9375rem; /* 15px*/
     
   }
 }
